@@ -1,0 +1,170 @@
+<DOCOTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> contacts/ Questions </title>
+        <link rel="stylesheet" href="style.css">
+
+        </link>
+    </head>
+
+    <body class="body">
+
+
+        <div class="header-container">
+
+            <h1>Natural Skin & Health</h1>
+
+
+            <header> 
+
+                
+        <!-- CART ICON-->
+        <div class="cart-icon" onclick="openCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+
+
+        <!---CART PANEL --->
+        <div id="cart-panel" class="cart-panel">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p> Total: $<span id="cart-total">0.00</span></p>
+            <button onclick="window.location.href='checkout.html'">Checkout</button>
+        </div> 
+        
+                <!-- mobile Nav -->
+                <div class="mobile-menu">
+                    <span class="hamburger" onclick="toggleMenu()">&#9776; Menu</span>
+
+                    <div id="overlay-menu" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="toggltMenu()">&times;</a>
+                        <ul class="overlay-content">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="benefits.html">Benefits</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Big nav desktop-->
+                <div class="big-menu">
+
+                    <ul class="menu-options">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="benefits.html">Benefits</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                </div>
+
+            </header>
+
+            <main>
+                <!-- reviews photos-->
+                <h2> Reviews</h2>
+                <section class="reviews-section">
+                    <h2>What Our Customers Say</h2>
+                    <div class="reviews-container">
+
+                        <div class="review-card">
+                            <img src="images/review.jpg" alt="te w." class="reviewer-photo">
+                            <h3>Te W.</h3>
+                            <p class="review-text"> NS&H products are kool thanks</p>
+                            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+
+
+                        <div class="review-card">
+                            <img src="images/review2.jpg" alt="leesa k." class="reviewer-photo">
+                            <h3> Leesa K.</h3>
+                            <p class="review-text"> Amazing products Amazing prices NS&H is the way to go. Well worth
+                                it. thank u.</p>
+                            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Questions that have been asked-->
+                <h2> Q&A </h2>
+                <details>
+                    <summary> What is Natural skin & Health </summary>
+                    <p> We are a company that is dedicated to creating natural and high quality skincare products</p>
+                </details>
+
+                <details>
+                    <summary>Are your products cruelty-free?</summary>
+                    <p> Yes, all products are 100% cruelty free never ever tested on animals. </p>
+                </details>
+
+                <details>
+                    <summary> do we ship our products? </summary>
+                    <p> No we dont we make our products with natural ingrediants derived from the earth and in our own
+                        plant
+                        based facility</p>
+                </details>
+
+                <details>
+                    <summary> Our Return policy? </summary>
+                    <p> We offer a 30-day money-back guarantess on all products if your not satisfied</p>
+                </details>
+
+                <details>
+                    <summary>Contacting customer support? </summary>
+                    <p> you can reach our customer support via E-mail NS&H@gmail.com</p>
+                </details>
+
+
+                <!-- Questions form-->
+                <h1> Questions form </h1>
+
+
+                <form action="#" method="post" class="questions-form">
+
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="message">Message</label>
+
+                        <textarea name="message" id="message" rows="5" placeholder="Your message" required></textarea>
+                    </div>
+
+                    <div class="form-control">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+        </div>
+
+
+
+        <!-- companys email-->
+        <div class="contact-form">
+            <h2> contacts us </h2>
+
+
+            <p> NS&H.NZ@gmail.com </p>
+
+
+
+
+
+            </main>
+    </body>
+    <script src="script.js"></script>
+
+    </html>

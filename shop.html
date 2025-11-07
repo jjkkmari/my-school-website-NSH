@@ -1,0 +1,155 @@
+<DOCOTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> NS&H shop </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+
+  </head>
+
+  <body class="body">
+
+
+
+    <div class="header-container">
+      <h1>NS&H shop</h1>
+
+
+      <!--- Mobile menu -->
+      <header>
+
+        <!-- CART ICON-->
+        <div class="cart-icon" onclick="openCart()">
+          🛒 <span id="cart-count">0</span>
+        </div>
+
+        <!---CART PANEL --->
+        <div id="cart-panel" class="cart-panel">
+          <h2>Your Cart</h2>
+          <ul id="cart-items"></ul>
+          <p> Total: $<span id="cart-total">0.00</span></p>
+          <button onclick="window.location.href='checkout.html'">Checkout</button>
+        </div>
+
+
+
+        <div class="mobile-menu">
+          <span class="hamburger" onclick="toggleMenu()">&#9776; Menu</span>
+
+          <div id="overlay-menu" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+            <ul class="overlay-content">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="benefits.html">Benefits</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Big nav desktop-->
+        <div class="big-menu">
+
+          <ul class="menu-options">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+
+
+
+
+
+
+      </header>
+
+      <main>
+        <section class="products-section">
+          <h2> Our products </h2>
+          <div class="products-container">
+
+            <div class="product-card">
+              <img src="images/Media (5).jpg" alt="Rejuvenating Cream">
+              <h3>Rejuvenating Cream </h3>
+              <p class="price">$5.00</p>
+              <button class="buy-btn" data-name="Rejuvenating Cream" data-price="5.00">Buy Now</button>
+              <button onclick="addToCart('rejuvenating cream', 5.00)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Media (6).jpg" alt="Hydrating Face Mask">
+              <h3>Hydrating Face Mask</h3>
+              <p class="price">$5.00</p>
+              <button class="buy-btn" data-name="Hydrating Face Mask" data-price="5.00">Buy Now</button>
+              <button onclick="addToCart('Hydrating face cream', 5.00)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/Media (7).jpg" alt="Vitamin C Caps">
+              <h3>Vitamin C Caps</h3>
+              <p class="price">$4.00</p>
+              <button class="buy-btn" data-name="Vitamin C Caps" data-price="4.00">Buy Now</button>
+              <button onclick="addToCart('Vitamin C Honey caps', 4.00)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="imagedemo.png/photo1.jpg" alt="Essential Oils">
+              <h3> Essential Oils</h3>
+              <p class="price">$4.00</p>
+              <button class="buy-btn" data-name="Essential Oils" data-price="4.00">Buy Now</button>
+              <button onclick="addToCart('Essential oils', 4.00)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/media (8).png" alt="Glow lotion">
+              <h3> Glow Lotion </h3>
+              <p class="price">$5.00</p>
+              <button class="buy-btn" data-name="Glow lotion" data-price="5.00">Buy Now</button>
+              <button onclick="addToCart('Glow Lotion', 5.00)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/media (10).png" alt="Sweet Almond Oil">
+              <h3> Sweet Almond Oil </h3>
+              <p class="price"> $5.00</p>
+              <button class="buy-btn" data-name="Sweet Almond oil" data-price="5.00">Buy Now</button>
+              <button onclick="addToCart('Sweet Almond Oil', 5.00)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <img src="images/media (11).png" alt="Daily Moisturizer">
+              <h3> Daily Moisturizer </h3>
+              <p class="price">$5.00</p>
+              <button class="buy-btn" data-name="Daily Moisturizer" data-price="5.00">Buy Now</button>
+              <button onclick="addToCart('Daily Moisturizer', 5.00)">Add to Cart</button>
+            </div>
+
+
+            <a href="checkout.html"></a>
+
+
+          </div>
+        </section>
+    </div>
+    </main>
+
+
+
+
+
+
+
+  </body>
+
+
+
+  </html>
